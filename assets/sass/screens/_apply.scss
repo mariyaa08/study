@@ -1,0 +1,27 @@
+.apply{
+    padding: 100px 0;
+    background-color: #FBFBFB;
+    &__content{
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            .title{
+                font-size: 40px;
+                width: 70%;
+                span{
+                    color: $green;
+                }
+            }
+            .sub{
+                font-size: 22px;
+                color: #4A4A4A;
+            }
+            .desc{
+                color: $grey;
+                font-size: 17px;
+                
+            }
+        }
+    }
+}

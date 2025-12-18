@@ -1,0 +1,63 @@
+.digital{
+    padding: 100px 0;
+    &__content{
+        &__wrapper{
+            display: flex;
+            gap: 100px;
+            align-items: center;
+            .img__box{
+               
+                display: inline-block;
+               
+                img{
+                   
+                    max-width: 301px;
+                    max-height: 435px;
+                }
+             
+                               
+                
+
+            }
+            .text__wrap{
+                display: flex;
+                flex-direction: column;
+                gap: 55px;
+                align-items: flex-start;
+                &__title{
+                    width: 80%;
+                    font-size: 40px;
+                    color: black;
+                    letter-spacing: -5%;
+                    span{
+                        color: $sec-blue;
+                    }
+                }
+                .list{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    &__item{
+                        display: flex;
+                        gap: 10px;
+                        color: $grey;
+                        font-size: 17px;
+                        &__icon{
+                            color: $sec-blue;
+                            
+                        }
+                    }
+                }
+                .btn{
+                    padding: 15px 35px;
+                    background: linear-gradient(to right, #0167B5, #0296F0);
+                    align-items: flex-start;
+                    color: $white;
+                    font-size: 17px;
+                    margin-left: 30px;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,79 @@
+.study{
+    padding: 100px 0;
+    background-image: url(./../../img/home/Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    &__content{
+      
+        &__holder{
+            display: flex;
+            .text{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+                .title{
+                    font-size: 50px;
+                    color: $white;
+                    letter-spacing: -5%;
+                    width: 60%;
+                }
+                .list{
+                    display: flex;
+                    gap: 11px;
+                    flex-direction: column;
+                    &__item{
+                        align-items: center;
+                        &__icon{
+                        color: $blue;
+                        }
+                        width: 80%;
+                        display: flex;
+                        gap: 10px;
+                        font-size: 17px;
+                        color: $white;
+                    }
+                }
+                .bnt{
+                    top: 20px;
+                    align-items: flex-start;
+                    padding: 15px 35px;
+                    color: $white;
+                    font-size: 17px;
+                    background: linear-gradient(to right, #0167B5, #0296F0);
+                    position: relative;
+                    span{
+                       text-decoration: line-through;
+                       color: #f2f2f2;
+                       opacity: 0.7;
+                    }
+                    
+                    img{
+                        position: absolute;
+                        width: 63px;
+                        height: 49px;
+                        top: -25px;
+                    }
+                }
+                .count{
+                    img{
+                        max-width: 15px;
+                        max-height: 16px;
+                    }
+                    margin-top: 40px;
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    color: $white;
+                    span{
+                        color: $light-blue;
+                        font-size: 22px;
+                        font-weight: 700px;
+                    }
+                }
+            }
+        }
+    }
+}
