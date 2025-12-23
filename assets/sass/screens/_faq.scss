@@ -27,8 +27,6 @@
             .details {
                 display: flex;
                 flex-direction: column;
-                gap: 20px;
-
                 &__sum {
                     padding: 20px;
                     border-top: 1px solid $sec-grey;
@@ -63,6 +61,7 @@
                     gap: 15px;
 
                     &__text {
+                        padding: 20px;
                         color: $grey;
                         font-weight: 600;
                         align-items: center;

@@ -633,13 +633,13 @@ li {
 
 .work {
   padding: 100px 0;
+  background-color: #EFFBFF;
 }
 .work__content {
   display: flex;
   gap: 50px;
   align-items: center;
   justify-content: center;
-  background-color: #EFFBFF;
 }
 .work__content__info {
   display: flex;
@@ -713,6 +713,8 @@ li {
 .view__content__wrap {
   display: flex;
   gap: 20px;
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .faq {
@@ -746,7 +748,6 @@ li {
 .faq__content__wrap .details {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 .faq__content__wrap .details__sum {
   padding: 20px;
@@ -779,6 +780,7 @@ li {
   gap: 15px;
 }
 .faq__content__wrap .details__el__text {
+  padding: 20px;
   color: #4A4A4A;
   font-weight: 600;
   align-items: center;

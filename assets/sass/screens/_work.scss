@@ -1,11 +1,11 @@
 .work{
     padding: 100px 0;
+    background-color: #EFFBFF;
     &__content{
         display: flex;
         gap: 50px;
         align-items: center;
         justify-content: center;
-        background-color: #EFFBFF;
         &__info{
             display: flex;
             flex-direction: column;
