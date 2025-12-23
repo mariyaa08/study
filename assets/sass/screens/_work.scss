@@ -1,0 +1,53 @@
+.work{
+    padding: 100px 0;
+    &__content{
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+        background-color: #EFFBFF;
+        &__info{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .wrap{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &__title{
+                    font-size: 40px;
+                    color: $green;  
+                }
+                &__bold{
+                    font-size: 22px;
+                    color: $black;
+                    display: flex;
+                    gap: 20px;
+                    align-items: center;
+                    i{
+                        color: $sec-blue;
+                    }
+                }
+            }
+            .list{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                &__item{
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    font-size: 17px;
+                    color: #4A4A4A;
+                    i{
+                        color: $green;
+                    }
+                    span{
+                        color: black;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

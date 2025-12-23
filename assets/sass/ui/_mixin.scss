@@ -1,0 +1,12 @@
+@mixin btn($color, $bcColor, $padding, $radius){
+    background: $bcColor;
+    padding: $padding;
+    border-radius: $radius;
+    @include text(600, $color);
+    
+}
+@mixin text($weight, $color){
+    font-size: 18px;
+    font-weight: $weight;
+    color: $color;
+}

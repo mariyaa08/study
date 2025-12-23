@@ -1,0 +1,45 @@
+.end{
+    padding: 100px 0;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        &__title{
+            font-size: 17px;  
+        }
+        &__desc{
+            font-size: 14px;
+        }
+        &__link{
+            color: $sec-blue;
+            font-size: 14px;
+            display: flex;
+            gap: 10px;
+        }
+        &__wrap{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            .desc{
+                font-size: 14px;
+                width: 410px;
+                text-align: center;
+            }
+        }
+        &__list{
+            display: flex;
+            gap: 20px;
+            .item{
+                font-size: 14px;
+                color: $black;
+                &:nth-child(2){
+                    color: $sec-blue;
+                }
+            }
+        }
+    }
+
+}

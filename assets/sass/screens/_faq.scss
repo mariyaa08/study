@@ -1,0 +1,102 @@
+.faq {
+    padding: 100px 0;
+    background-color: #EFFBFF;
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: flex-start;
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            justify-content: flex-start;
+            .for__text{
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                &__title{
+                    font-size: 40px;
+                    color: $sec-blue;
+                }
+                img{
+                    max-width: 72px;
+                    
+                }
+            }
+            .details {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                &__sum {
+                    padding: 20px;
+                    border-top: 1px solid $sec-grey;
+                    border-bottom: 1px solid $sec-grey;
+                    padding-right: 60px;
+                    cursor: pointer;
+                    font-size: 22px;
+                    color: $grey;
+                    font-weight: 600;
+                    list-style-type: none;
+                    position: relative;
+
+                    &__icon {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 25px;
+                        right: 20px;
+                    }
+                }
+
+                &[open] .details__sum__icon {
+                    transform: translateY(-50%) rotate(180deg);
+                    color: $sec-blue;
+                }
+
+                &__el {
+                    border-top: 1px solid $grey;
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    &__text {
+                        color: $grey;
+                        font-weight: 600;
+                        align-items: center;
+                        display: flex;
+                        gap: 10px;
+
+                        i {
+                            color: $green;
+
+                        }
+                    }
+                }
+
+                &:last-child {
+                    border-bottom: 1px solid $grey;
+                    display: flex;
+
+                    a {
+                        color: $sec-blue;
+                    }
+                }
+            }
+
+            .link {
+                padding: 15px 35px;
+                background-color: $sec-blue;
+                color: $white;
+                text-align: center;
+                display: flex;
+                align-self: flex-start;
+                border-radius: 5px;
+                font-size: 17px;
+            }
+
+        }
+    }
+}

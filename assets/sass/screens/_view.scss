@@ -1,0 +1,32 @@
+.view{
+    padding: 100px 0;
+    background-color: $white;
+    &__content{
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+        justify-content: center;
+        align-items: center;
+        &__title{
+            font-size: 40px;
+            color: $black;
+        }
+        img{
+            width: 55px;
+        }
+        &__holder{
+            display: flex;
+            gap: 10px;
+            img{
+                min-width: 218px;
+            }
+        }
+        &__wrap{
+            display: flex;
+            gap: 20px;
+            
+        }
+
+    }
+
+}

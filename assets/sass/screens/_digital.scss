@@ -6,20 +6,37 @@
             gap: 100px;
             align-items: center;
             .img__box{
-               
-                display: inline-block;
-               
-                img{
-                   
-                    max-width: 301px;
-                    max-height: 435px;
+                min-width: 300px;
+                flex: 1;
+                position: relative;
+                img{    
+                    width: 100%;
+                    position: relative;
+                    z-index: 3;
                 }
-             
-                               
-                
-
+                &::before,
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border:2px solid #ADFF44;
+                    border-radius: 10px;
+                    width: 100%;
+                    height: 100%;
+                    top: 20px;
+                    left: 20px;
+                    background-color: $white;
+                    z-index: 2;
+                    opacity: 0.5;
+                }
+                &::after {
+                    top: 40px;
+                    left: 40px;
+                    z-index: 1;
+                }
             }
             .text__wrap{
+                min-width: 300px;
+                flex: 2;
                 display: flex;
                 flex-direction: column;
                 gap: 55px;

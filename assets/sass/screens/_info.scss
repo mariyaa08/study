@@ -1,0 +1,130 @@
+.info {
+    padding: 100px 0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+
+            .title {
+                width: 80%;
+                font-size: 40px;
+
+                span {
+                    color: $sec-blue;
+                }
+            }
+
+            .sub {
+                font-size: 22px;
+                color: $grey;
+            }
+        }
+
+        &__holder {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            .card {
+                min-width: 300px;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                position: relative;
+
+                &__img {
+                    height: 200px;
+                    width: 100%;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 100%;
+                        top: 20px;
+                        left: 20px;
+                        z-index: 2;
+                        transition: all .3s ease;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        border: 2px solid #F2F2F2;
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 100%;
+                        top: 20px;
+                        left: 20px;
+                        transition: all .3s ease;
+                        z-index: 2;
+                    }
+
+                    &::after {
+                        top: 40px;
+                        left: 40px;
+                        z-index: 1;
+                    }
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                        height: 100%;
+                        position: relative;
+                        z-index: 3;
+                    }
+                }
+
+                &:hover .opasity {
+                    opacity: 0;
+                    transition: 0.4s ease;
+                }
+
+                &:hover .card__img::after {
+                    border: 2px solid #aeff4484;
+
+                }
+
+                &:hover .card__img::before {
+                    border: 2px solid #ADFF44;
+                }
+
+                .opasity {
+                    position: absolute;
+                    background-color: black;
+                    opacity: 0.5;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border-radius: 10px;
+                    z-index: 2;
+                }
+
+            }
+        }
+
+        .btn {
+            padding: 15px 35px;
+            background: linear-gradient(to right, #0167B5, #0296F0);
+            align-items: flex-start;
+            color: $white;
+            font-size: 17px;
+            margin-left: 30px;
+            border-radius: 4px;
+
+        }
+    }
+}
